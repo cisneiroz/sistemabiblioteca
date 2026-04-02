@@ -8,7 +8,7 @@ Sistema de controle e organização de uma biblioteca, com foco em cadastro, emp
 
 🚧 Status: Em desenvolvimento
 
-👨‍💻 Autor: João , Carlos  , Yasmim , Hadassa
+👨‍💻 Autor: João , Carlos  , Yasmin , Hadassa
 
 💡 Visão Geral
 
