@@ -6,13 +6,15 @@ typedef struct {
     int status; // 0 = emprestado | 1 = disponível
 } Livro;
 
-// Exemplo com 2 livros já cadastrados
+// Exemplo com 4 livros já cadastrados
 Livro biblioteca[] = {
     {"Coraline", 1},
-    {"O pequeno principe", 1}
+    {"O pequeno principe", 1},
+	{"Outlander", 0},
+	{"Castelo Animado", 0},
 };
 
-int totalLivros = 2;
+int totalLivros = 4;
 
 // Função para emprestar
 void emprestarLivro() {
@@ -63,4 +65,6 @@ int main() {
     emprestarLivro();
     devolverLivro();
     return 0;
+}
+
 }
