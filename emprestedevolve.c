@@ -66,5 +66,3 @@ int main() {
     devolverLivro();
     return 0;
 }
-
-}
