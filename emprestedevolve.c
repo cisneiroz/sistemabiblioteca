@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-#include <livro.h>
 
+typedef struct {
+    char titulo[50];
+    int status; // 0 = emprestado | 1 = disponível
+} Livro;
 
-// Exemplo funcional com 4 livros
+// Exemplo com 4 livros já cadastrados
 Livro biblioteca[] = {
     {"Coraline", 1},
     {"O pequeno principe", 1},
@@ -13,6 +16,7 @@ Livro biblioteca[] = {
 
 int totalLivros = 4;
 
+// Função para emprestar
 void emprestarLivro() {
     char nome[50];
     printf("Digite o nome do livro para emprestar: ");
@@ -34,6 +38,7 @@ void emprestarLivro() {
     printf("Livro nao encontrado!\n");
 }
 
+// Função para devolver
 void devolverLivro() {
     char nome[50];
     printf("Digite o nome do livro para devolver: ");
@@ -59,6 +64,5 @@ void devolverLivro() {
 int main() {
     emprestarLivro();
     devolverLivro();
-	emprestarLivro();
     return 0;
 }
